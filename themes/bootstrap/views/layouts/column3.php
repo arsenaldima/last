@@ -21,8 +21,8 @@
             'items'=>array(
 
 
-                array('label'=>'изменение почту','url'=>array('/userPersonal/ChangeEmail','id'=>0)),
-                array('label'=>'изменение пароль','url'=>array('/userPersonal/ChangePassword','id'=>0,'time'=>0)),
+                array('label'=>'изменить email','url'=>array('/userPersonal/ChangeEmail','id'=>0)),
+                array('label'=>'измененть пароль','url'=>array('/userPersonal/ChangePassword','id'=>0,'time'=>0)),
                 array('label'=>'пригласить пользователя','url'=>array('/UserPersonal/PriglDruga')),
                 array('label'=>'Создать статью','url'=>array('/userPersonal/create')),
                 array('label'=>'Выйти','url'=>array('/site/logout')),
