@@ -25,7 +25,7 @@ Yii::app()->clientScript->registerCssFile('http://web/css/page.css');
                     if(Yii::app()->user->id==$id)
                         echo CHtml::link(CmsSetting::carimage($model->picture,228,228,'img-thumbnail',0,$id),array('/UserPersonal/avatar'),array('class'=>'linkFile','enctype'=>'multipart/form-data'));
                     else
-                        CmsSetting::carimage($model->picture,228,228,'img-thumbnail',0,$id);
+                       echo CmsSetting::carimage($model->picture,228,228,'img-thumbnail',0,$id);
 
                ?>
         </div>
