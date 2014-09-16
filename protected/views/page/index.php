@@ -28,3 +28,7 @@ Yii::app()->clientScript->registerScriptFile('http://web/js/page.js');
 
 
 <? $this->renderPartial('widget',array('data'=>$data )); ?>
+
+<script>
+    $(":date").dateinput();
+</script>
