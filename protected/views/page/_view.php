@@ -1,6 +1,6 @@
 <?php
 /* @var $comments*/
-Yii::app()->clientScript->registerCssFile('http://web/css/page.css');
+Yii::app()->clientScript->registerCssFile(Yii::app()->getRequest()->getBaseUrl(true).'/css/page.css');
 ?>
 
 <br>
