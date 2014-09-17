@@ -136,7 +136,7 @@ class CmsSetting extends CActiveRecord
           case 0:{ if((file_exists('./images/'.$id.'/avatars/'.$name)&&($name!=null)))
 
 
-              return CHtml::image('http://web/images/'.$id.'/avatars/'.$name,$name,
+              return CHtml::image(Yii::app()->getRequest()->getBaseUrl(true).'/images/'.$id.'/avatars/'.$name,$name,
                   array(
                       'width'=>$width,
                       'height'=>$heigth,
@@ -151,7 +151,7 @@ class CmsSetting extends CActiveRecord
           case 1:{ if((file_exists('./images/'.$id.'/pages/'.$name)&&($name!=null)))
 
 
-              return CHtml::image('http://web/images/'.$id.'/pages/'.$name,$name,
+              return CHtml::image(Yii::app()->getRequest()->getBaseUrl(true).'/images/'.$id.'/pages/'.$name,$name,
                   array(
                       'width'=>$width,
                       'height'=>$heigth,
@@ -164,7 +164,7 @@ class CmsSetting extends CActiveRecord
           }
       }
             if($flag)
-            return CHtml::image('http://web/images/default/1.jpg','No photo',
+            return CHtml::image(Yii::app()->getRequest()->getBaseUrl(true).'/images/default/1.jpg','No photo',
                 array(
                     'width'=>$width,
                     'height'=>$heigth,
