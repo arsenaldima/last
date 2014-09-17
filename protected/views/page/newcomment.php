@@ -4,7 +4,7 @@
 /* @var $this CmsCommentController */
 /* @var $model CmsComment */
 /* @var $form CActiveForm */
-Yii::app()->clientScript->registerScriptFile('http://web/js/viewcom.js');
+Yii::app()->clientScript->registerScriptFile(Yii::app()->getRequest()->getBaseUrl(true).'/js/viewcom.js');
 
 ?>
 
