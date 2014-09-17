@@ -2,7 +2,7 @@
 /* @var $this UserPersonalController */
 /* @var $model CmsUser */
 /* @var $form CActiveForm */
-Yii::app()->clientScript->registerScriptFile('http://web/js/CheckEmail.js');
+Yii::app()->clientScript->registerScriptFile(Yii::app()->getRequest()->getBaseUrl(true).'/js/CheckEmail.js');
 ?>
 
 <?php if(Yii::app()->user->hasFlash('success')):?>
