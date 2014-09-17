@@ -26,7 +26,8 @@ $(document).ready(function(){
             if((Number(month)<=Number($('#month').val()))||((Number(year)<Number($('#year').val()))&&Number(month)>Number($('#month').val())))
             {
                 var id = $('#cat').val();
-                window.location.href='http://web/page/index?data='+date+'&id='+id;
+                var ur = $('#url').val();
+                window.location.href=ur+'/page/index?data='+date+'&id='+id;
             }
             else
             {
