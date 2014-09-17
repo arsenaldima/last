@@ -3,7 +3,7 @@
 /* @var $model CmsPage */
 /* @var $form CActiveForm */
 
-Yii::app()->clientScript->registerScriptFile('http://web/js/createPage.js');
+Yii::app()->clientScript->registerScriptFile(Yii::app()->getRequest()->getBaseUrl(true).'/js/createPage.js');
 ?>
 <style type="text/css">
 
