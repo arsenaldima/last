@@ -6,8 +6,8 @@
 $this->breadcrumbs=array(
 	'User Personal',
 );
-Yii::app()->clientScript->registerScriptFile('http://web/js/UserPersonal_index.js');
-Yii::app()->clientScript->registerCssFile('http://web/css/page.css');
+Yii::app()->clientScript->registerScriptFile(Yii::app()->getRequest()->getBaseUrl(true).'/js/UserPersonal_index.js');
+Yii::app()->clientScript->registerCssFile(Yii::app()->getRequest()->getBaseUrl(true).'/css/page.css');
 
 ?>
 <div class="row">
