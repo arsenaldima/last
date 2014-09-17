@@ -10,15 +10,15 @@
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
 	<?php Yii::app()->bootstrap->register();
-    Yii::app()->clientScript->registerCssFile('http://web/css/page.css');
-    Yii::app()->clientScript->registerCssFile('http://web/css/font-awesome.css');
-    Yii::app()->clientScript->registerCssFile('http://web/css/style.css');
-    Yii::app()->clientScript->registerScriptFile('http://web/js/page.js');
+    Yii::app()->clientScript->registerCssFile(Yii::app()->getRequest()->getBaseUrl(true).'/css/page.css');
+    Yii::app()->clientScript->registerCssFile(Yii::app()->getRequest()->getBaseUrl(true).'/css/font-awesome.css');
+    Yii::app()->clientScript->registerCssFile(Yii::app()->getRequest()->getBaseUrl(true).'/css/style.css');
+    Yii::app()->clientScript->registerScriptFile(Yii::app()->getRequest()->getBaseUrl(true).'/js/page.js');
     $brouzer=CmsSetting::user_browser($_SERVER['HTTP_USER_AGENT']);
 
     if(($brouzer!='Opera')&&($brouzer!='Chrome'))
     {
-        Yii::app()->clientScript->registerScriptFile('http://web/js/jquery.tools.min.js');
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->getRequest()->getBaseUrl(true).'/js/jquery.tools.min.js');
     }
     ?>
 
