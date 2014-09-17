@@ -6,7 +6,7 @@
 /* @var $val Yii::app()->request->getParam('data') */
 
 
-Yii::app()->clientScript->registerScriptFile('http://web/js/page.js');
+Yii::app()->clientScript->registerScriptFile(Yii::app()->getRequest()->getBaseUrl(true).'/js/page.js');
 
 
 ?>
@@ -22,6 +22,7 @@ Yii::app()->clientScript->registerScriptFile('http://web/js/page.js');
     <input type="hidden" id='month' value="<?echo date('m',time())?>">
     <input type="hidden" id='year' value="<?echo date('Y',time())?>">
     <input type="hidden" id='cat' value="<?echo Yii::app()->request->getParam('id')?>">
+    <input type="hidden" id='url' value="<? echo Yii::app()->getRequest()->getBaseUrl(true);?>">
 
 </div>
 
