@@ -1,7 +1,7 @@
 <?php
 /* @var $this UserPersonalController */
 /* @var $form CActiveForm */
-Yii::app()->clientScript->registerScriptFile('http://web/js/CheckPassword.js');
+Yii::app()->clientScript->registerScriptFile(Yii::app()->getRequest()->getBaseUrl(true).'/js/CheckPassword.js');
 ?>
 
 <?php if(Yii::app()->user->hasFlash('success')):?>
